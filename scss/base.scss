@@ -1,0 +1,69 @@
+body {
+
+}
+
+header {
+    h1 {
+
+    }
+}
+
+article {
+    section {
+        table.pin-row {
+            &.pin-row-odd {
+
+            }
+            &.pin-row-even {
+
+            }
+
+            thead {
+                tr {
+                    th {
+
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        &.def-func {
+                            font-weight: bold;
+                            font-style: oblique;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "columns";
+@import "types";
+
+code {
+
+}
+
+aside {
+    h2 {
+
+    }
+    ul {
+        li {
+            a {
+
+            }
+        }
+    }
+}
+
+footer {
+    p {
+        a {
+
+        }
+    }
+}

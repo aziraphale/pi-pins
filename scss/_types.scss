@@ -1,0 +1,78 @@
+article {
+    section {
+        table.pin-row {
+            tbody {
+                tr {
+                    td {
+                        // Colours defined as RGB as that's the easiest way
+                        //  to get them out of Excel! :)
+                        $black: rgb(0, 0, 0);
+                        $white: rgb(255, 255, 255);
+                        $grey: rgb(166, 166, 166);
+
+                        &.type-3v3 {
+                            color: $black;
+                            background-color: rgb(255, 192, 0);
+                        }
+                        &.type-i2c {
+                            color: $white;
+                            background-color: rgb(0, 176, 240);
+                        }
+                        &.type-gpio {
+                            color: $black;
+                            background-color: rgb(102, 255, 51);
+                        }
+                        &.type-arm {
+                            color: $grey;
+                            background-color: rgb(242, 242, 242);
+                        }
+                        &.type-gpclk {
+                            color: $white;
+                            background-color: rgb(0, 112, 192);
+                        }
+                        &.type-gnd {
+                            color: $white;
+                            background-color: rgb(0, 0, 0);
+                        }
+                        &.type-uart {
+                            color: $black;
+                            background-color: rgb(255, 255, 0);
+                        }
+                        &.type-spi {
+                            color: $white;
+                            background-color: rgb(112, 48, 160);
+                        }
+                        &.type-reserved {
+                            color: $white;
+                            background-color: rgb(191, 191, 191);
+                        }
+                        &.type-sd {
+                            color: $black;
+                            background-color: rgb(255, 124, 128);
+                        }
+                        &.type-id-eeprom {
+                            color: $white;
+                            background-color: rgb(0, 176, 240);
+                        }
+                        &.type-pwm {
+                            color: $black;
+                            background-color: rgb(189, 215, 238);
+                        }
+                        &.type-bscsl {
+                            color: $white;
+                            background-color: rgb(131, 60, 12);
+                        }
+                        &.type-pcm {
+                            color: $white;
+                            background-color: rgb(84, 130, 53);
+                        }
+                        &.type-5v {
+                            color: $white;
+                            background-color: rgb(255, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

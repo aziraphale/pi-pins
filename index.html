@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raspberry Pi 2 GPIO Pins</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <h1>Raspberry Pi 2 GPIO Pins</h1>
+    </header>
+
+    <article>
+        <section>
+            <table class="pin-row pin-row-odd">
+                <thead>
+                    <tr>
+                        <th class="col-notes-alt-funcs" colspan="4">Notes/Alternative Functions</th>
+                        <th class="col-pin-nums" colspan="2">Pin Numbers</th>
+                    </tr>
+                    <tr>
+                        <th class="col-alt5">ALT 5</th>
+                        <th class="col-alt4">ALT 4</th>
+                        <th class="col-alt3">ALT 3</th>
+                        <th class="col-alt0">ALT 0</th>
+                        <th class="col-gpio">GPIO (BCM №)</th>
+                        <th class="col-rpi-pin-num">RPi Pin №</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pin-1">
+                        <td class="col-special type-3v3" colspan="4">50 mA max; shared w/ 17</td>
+                        <td class="col-gpio type-3v3">+3V3</td>
+                        <td class="col-rpi-pin-num">1</td>
+                    </tr>
+                    <tr class="pin-3">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-i2c def-func">I²C1_SDA</td>
+                        <td class="col-gpio type-gpio">GPIO 2</td>
+                        <td class="col-rpi-pin-num">3</td>
+                    </tr>
+                    <tr class="pin-5">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-i2c def-func">I²C1_SCL</td>
+                        <td class="col-gpio type-gpio">GPIO 3</td>
+                        <td class="col-rpi-pin-num">5</td>
+                    </tr>
+                    <tr class="pin-7">
+                        <td class="col-alt5 type-arm">ARM_TDI</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-gpclk def-func">GPCLK0</td>
+                        <td class="col-gpio type-gpio">GPIO 4</td>
+                        <td class="col-rpi-pin-num">7</td>
+                    </tr>
+                    <tr class="pin-9">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">9</td>
+                    </tr>
+                    <tr class="pin-11">
+                        <td class="col-alt5 type-uart">UART1_RTS</td>
+                        <td class="col-alt4 type-spi">SPI1_CE1_N</td>
+                        <td class="col-alt3 type-uart">UART0_RTS</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 17</td>
+                        <td class="col-rpi-pin-num">11</td>
+                    </tr>
+                    <tr class="pin-13">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_TMS</td>
+                        <td class="col-alt3 type-sd">SD1_DAT3</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 27</td>
+                        <td class="col-rpi-pin-num">13</td>
+                    </tr>
+                    <tr class="pin-15">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_TRST</td>
+                        <td class="col-alt3 type-sd">SD1_CLK</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 22</td>
+                        <td class="col-rpi-pin-num">15</td>
+                    </tr>
+                    <tr class="pin-17">
+                        <td class="col-special type-3v3" colspan="4">50 mA max; shared w/ 1</td>
+                        <td class="col-gpio type-3v3">+3V3</td>
+                        <td class="col-rpi-pin-num">17</td>
+                    </tr>
+                    <tr class="pin-19">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-spi def-func">SPI0_MOSI</td>
+                        <td class="col-gpio type-gpio">GPIO 10</td>
+                        <td class="col-rpi-pin-num">19</td>
+                    </tr>
+                    <tr class="pin-21">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-spi def-func">SPI0_MISO</td>
+                        <td class="col-gpio type-gpio">GPIO 9</td>
+                        <td class="col-rpi-pin-num">21</td>
+                    </tr>
+                    <tr class="pin-23">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-spi def-func">SPI0_SCLK</td>
+                        <td class="col-gpio type-gpio">GPIO 11</td>
+                        <td class="col-rpi-pin-num">23</td>
+                    </tr>
+                    <tr class="pin-25">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">25</td>
+                    </tr>
+                    <tr class="pin-27">
+                        <td class="col-special type-id-eeprom" colspan="3">ID EEPROM; <code>GPIO 0</code> but not usable as such</td>
+                        <td class="col-alt0">I<sup>2</sup>C0_SDA</td>
+                        <td class="col-gpio type-id-eeprom def-func">ID_SD</td>
+                        <td class="col-rpi-pin-num">27</td>
+                    </tr>
+                    <tr class="pin-29">
+                        <td class="col-alt5 type-arm">ARM_TDO</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-gpclk">GPCLK1</td>
+                        <td class="col-gpio type-gpio">GPIO 5</td>
+                        <td class="col-rpi-pin-num">29</td>
+                    </tr>
+                    <tr class="pin-31">
+                        <td class="col-alt5 type-arm">ARM_RTCK</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-gpclk">GPCLK2</td>
+                        <td class="col-gpio type-gpio">GPIO 6</td>
+                        <td class="col-rpi-pin-num">31</td>
+                    </tr>
+                    <tr class="pin-33">
+                        <td class="col-alt5 type-arm">ARM_TCK</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-pwm">PWM1</td>
+                        <td class="col-gpio type-gpio">GPIO 13</td>
+                        <td class="col-rpi-pin-num">33</td>
+                    </tr>
+                    <tr class="pin-35">
+                        <td class="col-alt5 type-pwm">PWM1</td>
+                        <td class="col-alt4 type-spi">SPI1_MISO</td>
+                        <td class="col-alt3 type-bscsl">BSCSL SCL/SCLK</td>
+                        <td class="col-alt0 type-pcm">PCM_FS</td>
+                        <td class="col-gpio type-gpio">GPIO 19</td>
+                        <td class="col-rpi-pin-num">35</td>
+                    </tr>
+                    <tr class="pin-37">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_TDI</td>
+                        <td class="col-alt3 type-sd">SD1_DAT2</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio">GPIO 26</td>
+                        <td class="col-rpi-pin-num">37</td>
+                    </tr>
+                    <tr class="pin-39">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">39</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table class="pin-row pin-row-even">
+                <thead>
+                    <tr>
+                        <th class="col-notes-alt-funcs" colspan="4">Notes/Alternative Functions</th>
+                        <th class="pin-nums" colspan="2">Pin Numbers</th>
+                    </tr>
+                    <tr>
+                        <th class="col-alt5">ALT 5</th>
+                        <th class="col-alt4">ALT 4</th>
+                        <th class="col-alt3">ALT 3</th>
+                        <th class="col-alt0">ALT 0</th>
+                        <th class="col-gpio">GPIO (BCM №)</th>
+                        <th class="col-rpi-pin-num">RPi Pin №</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pin-2">
+                        <td class="col-special type-5v" colspan="4"></td>
+                        <td class="col-gpio type-5v">+5V</td>
+                        <td class="col-rpi-pin-num">2</td>
+                    </tr>
+                    <tr class="pin-4">
+                        <td class="col-special type-5v" colspan="4"></td>
+                        <td class="col-gpio type-5v">+5V</td>
+                        <td class="col-rpi-pin-num">4</td>
+                    </tr>
+                    <tr class="pin-6">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">6</td>
+                    </tr>
+                    <tr class="pin-8">
+                        <td class="col-alt5 type-uart">UART1_TXD</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-uart def-func">UART0_TXD</td>
+                        <td class="col-gpio type-gpio">GPIO 14</td>
+                        <td class="col-rpi-pin-num">8</td>
+                    </tr>
+                    <tr class="pin-10">
+                        <td class="col-alt5 type-uart">UART1_RXD</td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-uart def-func">UART0_RDX</td>
+                        <td class="col-gpio type-gpio">GPIO 15</td>
+                        <td class="col-rpi-pin-num">10</td>
+                    </tr>
+                    <tr class="pin-12">
+                        <td class="col-alt5 type-pwm">PWM0</td>
+                        <td class="col-alt4 type-spi">SPI1_CE0_N</td>
+                        <td class="col-alt3 type-bscsl">BSCSL SDA/MOSI</td>
+                        <td class="col-alt0 type-pcm">PCM_CLK</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 18</td>
+                        <td class="col-rpi-pin-num">12</td>
+                    </tr>
+                    <tr class="pin-14">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">14</td>
+                    </tr>
+                    <tr class="pin-16">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_RTCK</td>
+                        <td class="col-alt3 type-sd">SD1_CMD</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 23</td>
+                        <td class="col-rpi-pin-num">16</td>
+                    </tr>
+                    <tr class="pin-18">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_TDO</td>
+                        <td class="col-alt3 type-sd">SD1_DAT0</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 24</td>
+                        <td class="col-rpi-pin-num">18</td>
+                    </tr>
+                    <tr class="pin-20">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">20</td>
+                    </tr>
+                    <tr class="pin-22">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4 type-arm">ARM_TCK</td>
+                        <td class="col-alt3 type-sd">SD1_DAT1</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio def-func">GPIO 25</td>
+                        <td class="col-rpi-pin-num">22</td>
+                    </tr>
+                    <tr class="pin-24">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-spi def-func">SPI0_CE0_N</td>
+                        <td class="col-gpio type-gpio">GPIO 8</td>
+                        <td class="col-rpi-pin-num">24</td>
+                    </tr>
+                    <tr class="pin-26">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-spi def-func">SPI0_CE1_N</td>
+                        <td class="col-gpio type-gpio">GPIO 7</td>
+                        <td class="col-rpi-pin-num">26</td>
+                    </tr>
+                    <tr class="pin-28">
+                        <td class="col-special type-id-eeprom" colspan="3">ID EEPROM; <code>GPIO 1</code> but not usable as such</td>
+                        <td class="col-alt0 type-id-eeprom">I²C0_SCL</td>
+                        <td class="col-gpio type-id-eeprom def-func">ID_SC</td>
+                        <td class="col-rpi-pin-num">28</td>
+                    </tr>
+                    <tr class="pin-30">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">30</td>
+                    </tr>
+                    <tr class="pin-32">
+                        <td class="col-alt5"></td>
+                        <td class="col-alt4"></td>
+                        <td class="col-alt3"></td>
+                        <td class="col-alt0 type-pwm">PWM0</td>
+                        <td class="col-gpio type-gpio">GPIO 12</td>
+                        <td class="col-rpi-pin-num">32</td>
+                    </tr>
+                    <tr class="pin-34">
+                        <td class="col-special type-gnd" colspan="4"></td>
+                        <td class="col-gpio type-gnd">GND</td>
+                        <td class="col-rpi-pin-num">34</td>
+                    </tr>
+                    <tr class="pin-36">
+                        <td class="col-alt5 type-uart">UART1_CTS</td>
+                        <td class="col-alt4 type-spi">SPI1_CE2_N</td>
+                        <td class="col-alt3 type-uart">UART0_CTS</td>
+                        <td class="col-alt0 type-reserved">reserved</td>
+                        <td class="col-gpio type-gpio">GPIO 16</td>
+                        <td class="col-rpi-pin-num">36</td>
+                    </tr>
+                    <tr class="pin-38">
+                        <td class="col-alt5 type-gpclk">GPCLK0</td>
+                        <td class="col-alt4 type-spi">SPI1_MOSI</td>
+                        <td class="col-alt3 type-bscsl">BSCSL/MISO</td>
+                        <td class="col-alt0 type-pcm">PCM_DIN</td>
+                        <td class="col-gpio type-gpio">GPIO 20</td>
+                        <td class="col-rpi-pin-num">38</td>
+                    </tr>
+                    <tr class="pin-40">
+                        <td class="col-alt5 type-gpclk">GPCLK1</td>
+                        <td class="col-alt4 type-spi">SPI1_SCLK</td>
+                        <td class="col-alt3 type-bscsl">BSCSL/CE_N</td>
+                        <td class="col-alt0 type-pcm">PCM_DOUT</td>
+                        <td class="col-gpio type-gpio">GPIO 21</td>
+                        <td class="col-rpi-pin-num">40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+
+    <aside>
+        <h2>References</h2>
+        <ul>
+            <li><a href="http://elinux.org/RPi_Low-level_peripherals#General_Purpose_Input.2FOutput_.28GPIO.29">http://elinux.org/RPi_Low-level_peripherals#General_Purpose_Input.2FOutput_.28GPIO.29</a></li>
+            <li><a href="http://cdn.raspberry.tips/2014/08/GPIO-Raspberry-Pi-Model-B-plus.jpg">http://cdn.raspberry.tips/2014/08/GPIO-Raspberry-Pi-Model-B-plus.jpg</a></li>
+            <li><a href="https://pihw.wordpress.com/2013/01/30/sometimes-it-can-be-simple/">https://pihw.wordpress.com/2013/01/30/sometimes-it-can-be-simple/</a></li>
+            <li><a href="https://www.raspberrypi.org/forums/viewtopic.php?t=94194&amp;p=656257">https://www.raspberrypi.org/forums/viewtopic.php?t=94194&amp;p=656257</a></li>
+            <li><a href="http://elinux.org/RPi_BCM2835_GPIOs">http://elinux.org/RPi_BCM2835_GPIOs</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Built by <a href="https://www.andrewgillard.com/">Andrew Gillard</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

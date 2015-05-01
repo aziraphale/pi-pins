@@ -1,0 +1,74 @@
+article section table.pin-row tbody tr td.def-func {
+  font-weight: bold;
+  font-style: oblique; }
+
+article section table.pin-row thead tr th {
+  font-weight: bold;
+  text-align: left; }
+  article section table.pin-row thead tr th.col-notes-alt-funcs, article section table.pin-row thead tr th.col-pin-nums, article section table.pin-row thead tr th.col-rpi-pin-num {
+    text-align: center; }
+article section table.pin-row tbody tr td {
+  font-family: "Source Code Pro", monospace;
+  text-align: left; }
+  article section table.pin-row tbody tr td.col-special {
+    font-family: "Source Sans Pro", sans-serif; }
+  article section table.pin-row tbody tr td.col-rpi-pin-num {
+    text-align: center; }
+
+table.pin-row.pin-row-odd thead tr th.col-gpio, table.pin-row.pin-row-odd thead tr th.col-pin-nums {
+  border-left: 2px solid #000; }
+table.pin-row.pin-row-odd tbody tr td.col-rpi-pin-num {
+  border-left: 2px solid #000; }
+
+table.pin-row.pin-row-even thead tr th.col-gpio, table.pin-row.pin-row-even thead tr th.col-pin-nums {
+  border-right: 2px solid #000; }
+table.pin-row.pin-row-even tbody tr td.col-rpi-pin-num {
+  border-right: 2px solid #000; }
+
+article section table.pin-row tbody tr td.type-3v3 {
+  color: black;
+  background-color: #ffc000; }
+article section table.pin-row tbody tr td.type-i2c {
+  color: white;
+  background-color: #00b0f0; }
+article section table.pin-row tbody tr td.type-gpio {
+  color: black;
+  background-color: #66ff33; }
+article section table.pin-row tbody tr td.type-arm {
+  color: #a6a6a6;
+  background-color: #f2f2f2; }
+article section table.pin-row tbody tr td.type-gpclk {
+  color: white;
+  background-color: #0070c0; }
+article section table.pin-row tbody tr td.type-gnd {
+  color: white;
+  background-color: black; }
+article section table.pin-row tbody tr td.type-uart {
+  color: black;
+  background-color: yellow; }
+article section table.pin-row tbody tr td.type-spi {
+  color: white;
+  background-color: #7030a0; }
+article section table.pin-row tbody tr td.type-reserved {
+  color: white;
+  background-color: #bfbfbf; }
+article section table.pin-row tbody tr td.type-sd {
+  color: black;
+  background-color: #ff7c80; }
+article section table.pin-row tbody tr td.type-id-eeprom {
+  color: white;
+  background-color: #00b0f0; }
+article section table.pin-row tbody tr td.type-pwm {
+  color: black;
+  background-color: #bdd7ee; }
+article section table.pin-row tbody tr td.type-bscsl {
+  color: white;
+  background-color: #833c0c; }
+article section table.pin-row tbody tr td.type-pcm {
+  color: white;
+  background-color: #548235; }
+article section table.pin-row tbody tr td.type-5v {
+  color: white;
+  background-color: red; }
+
+/*# sourceMappingURL=base.css.map */

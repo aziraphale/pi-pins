@@ -1,0 +1,79 @@
+article {
+    section {
+        table.pin-row {
+            thead {
+                tr {
+                    th {
+                        font-weight: bold;
+                        text-align: left;
+
+                        &.col-notes-alt-funcs {}
+                        &.col-pin-nums {}
+                        &.col-alt5 {}
+                        &.col-alt4 {}
+                        &.col-alt3 {}
+                        &.col-alt0 {}
+                        &.col-gpio {}
+                        &.col-rpi-pin-num {}
+
+                        &.col-notes-alt-funcs, &.col-pin-nums, &.col-rpi-pin-num {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        font-family: "Source Code Pro", monospace;
+                        text-align: left;
+
+                        &.col-special {
+                            font-family: "Source Sans Pro", sans-serif;
+                        }
+                        &.col-alt5 {}
+                        &.col-alt4 {}
+                        &.col-alt3 {}
+                        &.col-alt0 {}
+                        &.col-gpio {}
+                        &.col-rpi-pin-num {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+table.pin-row.pin-row-odd {
+    thead tr th {
+        &.col-gpio, &.col-pin-nums
+        {
+            border-left: 2px solid #000;
+        }
+    }
+    tbody tr td
+    {
+        &.col-rpi-pin-num
+        {
+            border-left: 2px solid #000;
+        }
+    }
+}
+table.pin-row.pin-row-even {
+    thead tr th {
+        &.col-gpio, &.col-pin-nums
+        {
+            border-right: 2px solid #000;
+        }
+    }
+    tbody tr td
+    {
+        &.col-rpi-pin-num
+        {
+            border-right: 2px solid #000;
+        }
+    }
+}
