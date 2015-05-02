@@ -1,0 +1,46 @@
+@media (screen and min-device-width: 700px) {
+    article section table {
+        float: left;
+        &.pin-row-odd
+        {
+        }
+        &.pin-row-even
+        {
+        }
+    }
+
+    table.pin-row.pin-row-odd
+    {
+        thead tr th
+        {
+            &.col-gpio, &.col-pin-nums
+            {
+                border-left: 2px solid #000;
+            }
+        }
+        tbody tr td
+        {
+            &.col-rpi-pin-num
+            {
+                border-left: 2px solid #000;
+            }
+        }
+    }
+    table.pin-row.pin-row-even
+    {
+        thead tr th
+        {
+            &.col-gpio, &.col-pin-nums
+            {
+                border-right: 2px solid #000;
+            }
+        }
+        tbody tr td
+        {
+            &.col-rpi-pin-num
+            {
+                border-right: 2px solid #000;
+            }
+        }
+    }
+}

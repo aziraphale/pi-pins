@@ -20,6 +20,11 @@ article {
                             text-align: center;
                         }
                     }
+
+                    &:last-child th
+                    {
+                        border-bottom: 2px solid #000;
+                    }
                 }
             }
 
@@ -31,6 +36,11 @@ article {
 
                         &.col-special {
                             font-family: "Source Sans Pro", sans-serif;
+                            text-align: right;
+
+                            + td {
+                                font-weight: bold;
+                            }
                         }
                         &.col-alt5 {}
                         &.col-alt4 {}
@@ -47,7 +57,7 @@ article {
     }
 }
 
-table.pin-row.pin-row-odd {
+table.pin-row {
     thead tr th {
         &.col-gpio, &.col-pin-nums
         {
@@ -62,18 +72,25 @@ table.pin-row.pin-row-odd {
         }
     }
 }
-table.pin-row.pin-row-even {
-    thead tr th {
-        &.col-gpio, &.col-pin-nums
-        {
-            border-right: 2px solid #000;
-        }
-    }
-    tbody tr td
+
+article
+{
+    section
     {
-        &.col-rpi-pin-num
+        table.pin-row
         {
-            border-right: 2px solid #000;
+            tr
+            {
+                td, th
+                {
+                    &.col-alt5, &.col-alt4, &.col-alt3, &.col-alt0, &.col-gpio
+                    {
+                        width: 130px;
+                    }
+//                    &.col-alt5, &.col-alt4, &.col-alt3, &.col-alt0, &.col-gpio, &.col-special
+                    padding: 4px 3px 5px 3px;
+                }
+            }
         }
     }
 }
